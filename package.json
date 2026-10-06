@@ -1,0 +1,10 @@
+{
+  "name": "bartosz-debinski-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "verify": "node scripts/verify-site.mjs",
+    "check": "npm run build && npm run verify"
+  }
+}

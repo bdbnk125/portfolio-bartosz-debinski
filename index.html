@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bartosz Dębiński — portfolio grafika</title>
+<meta name="description" content="Portfolio Bartosza Dębińskiego — identyfikacja wizualna, branding i grafika użytkowa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bartosz Dębiński — portfolio grafika">
+<meta property="og:description" content="Identyfikacja wizualna, branding i grafika użytkowa.">
+<meta property="og:url" content="https://bartosz-debinski-test-wizualny.bartoszdebinski.chatgpt.site/">
+<meta property="og:image" content="https://bartosz-debinski-test-wizualny.bartoszdebinski.chatgpt.site/assets/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="b.dbnk — Portfolio 2026">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('has-js')</script>
+<link rel="stylesheet" href="fonts/fonts.css"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="identity" href="#top">b.dbnk</a>
+<header class="navigation">
+<nav class="menu-capsule" aria-label="Nawigacja główna">
+  <span class="menu-indicator" aria-hidden="true"></span>
+  <a href="#projekty" data-nav-item>Projekty</a>
+  <a href="#o-mnie" data-nav-item>O mnie</a>
+  <a href="#kontakt" data-nav-item>Kontakt</a>
+</nav>
+</header>
+<main id="top">
+  <section class="opening" aria-label="Przedstawienie">
+    <p class="opening-small">Grafik skupiony na identyfikacji wizualnej, brandingu i grafice użytkowej.</p>
+    <h1>Tworzę tożsamości wizualne i materiały graficzne dla marek, od pomysłu po zastosowania.</h1>
+  </section>
+
+  <section class="projects" id="projekty" aria-labelledby="projects-heading">
+    <div class="section-head"><h2 id="projects-heading">Projekty</h2></div>
+    <div class="project-grid">
+      <a class="project-slot" href="kivo.html" aria-label="Zobacz projekt KIVO"><img src="assets/projects/kivo/thumbnail.webp" alt="KIVO"></a>
+      <a class="project-slot" href="vena.html" aria-label="Zobacz projekt VENA Studio"><img src="assets/projects/vena/thumbnail.png" alt="VENA Studio"></a>
+    </div>
+  </section>
+
+  <section class="about" id="o-mnie" aria-labelledby="about-heading">
+    <div class="section-head"><h2 id="about-heading">O mnie</h2></div>
+    <div class="about-body">
+      <div class="about-photo-space" aria-hidden="true"></div>
+      <div class="about-copy">
+        <p class="about-intro">Najbardziej ciągnie mnie do projektów, w których można zbudować markę od początku albo nadać jej wyraźniejszy charakter.</p>
+        <div class="about-text">
+          <p>Zanim zacznę projektować, lubię trochę pogrzebać w temacie i zrozumieć, dla kogo właściwie to robię. Lubię, kiedy projekt ma swój charakter, ale nadal jest prosty i działa tak, jak powinien.</p>
+          <p>Poza projektowaniem robię zdjęcia analogowe i nagrywam starymi kamerami na kasety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact home-contact" id="kontakt" aria-labelledby="contact-heading">
+    <div class="section-head"><h2 id="contact-heading">Kontakt</h2></div>
+    <div class="contact-body">
+      <div class="contact-form-column">
+        <p class="contact-form-intro">Masz projekt? Napisz kilka słów.</p>
+        <form class="contact-form" action="/api/contact" method="post">
+          <div class="contact-form-row">
+            <input type="text" name="Imię" placeholder="Twoje imię" aria-label="Twoje imię" required>
+            <input type="email" name="E-mail" placeholder="E-mail" aria-label="E-mail" required>
+          </div>
+          <textarea name="Wiadomość" placeholder="O czym chcesz porozmawiać?" aria-label="O czym chcesz porozmawiać?" required></textarea>
+          <button type="submit">
+            <span>Wyślij wiadomość</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 21 3l-7.5 18-2.7-7.8L3 11.5Zm7.8 1.7L21 3"/></svg>
+          </button>
+          <p class="contact-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="contact-copy">
+        <p class="contact-title">Co dalej?</p>
+        <div class="contact-steps">
+          <p>Po wiadomości odezwę się i umówimy krótką rozmowę.</p>
+          <p>Porozmawiamy o Twoim projekcie i ustalimy, czego potrzebujesz.</p>
+          <p>Jeśli wszystko się zgadza, ustalimy zakres, termin i kolejne kroki.</p>
+        </div>
+        <div class="contact-divider" aria-hidden="true"></div>
+        <a class="contact-email" href="mailto:bartoszdebinski.kontakt@gmail.com">bartoszdebinski.kontakt<wbr>@gmail.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="home-footer">
+  <div class="footer-links"><a href="#o-mnie">O mnie</a><a href="#projekty">Projekty</a><a href="#top">Do góry ↑</a></div>
+</footer>
+<script src="navigation.js"></script>
+<script src="animations.js"></script>
+<script src="contact.js"></script>
+</body></html>
