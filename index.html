@@ -59,7 +59,8 @@
     <div class="contact-body">
       <div class="contact-form-column">
         <p class="contact-form-intro">Masz projekt? Napisz kilka słów.</p>
-        <form class="contact-form" action="/api/contact" method="post">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
           <div class="contact-form-row">
             <input type="text" name="Imię" placeholder="Twoje imię" aria-label="Twoje imię" required>
             <input type="email" name="E-mail" placeholder="E-mail" aria-label="E-mail" required>
