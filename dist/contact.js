@@ -14,21 +14,20 @@ if (contactForm) {
     submitLabel.textContent = 'Wysyłanie…';
     status.textContent = 'Wysyłanie wiadomości…';
 
-    const fields = new FormData(contactForm);
-    const payload = {
-      name: fields.get('Imię'),
-      email: fields.get('E-mail'),
-      message: fields.get('Wiadomość'),
-    };
-
     try {
-      const response = await fetch(contactForm.action, {
+      const formData = new FormData(contactForm);
+
+      const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(formData).toString()
       });
 
-      if (!response.ok) throw new Error('Nie udało się wysłać wiadomości.');
+      if (!response.ok) {
+        throw new Error('Nie udało się wysłać wiadomości.');
+      }
 
       contactForm.reset();
       status.textContent = 'Wiadomość została wysłana. Dziękuję.';
